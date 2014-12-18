@@ -11,6 +11,7 @@ public:
 
 		plr->ADD_GOSSIP_ITEM(0, "¿Deseas Enfretarte al gran Cachitos?", GOSSIP_SENDER_MAIN, 1); /*Añadimos las opciones del menú de dialogo*/
 		plr->ADD_GOSSIP_ITEM(0, "!!No quieres enfrentarte al Gran Cachitos!!,Lo Entiendo Tienes miedo igual que Evef", GOSSIP_SENDER_MAIN, 2);
+		plr->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, npc->GetGUID());
 		return true;
 	}
 
