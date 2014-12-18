@@ -6,12 +6,12 @@ class GossipMenuEvef : public CreatureScript /*Declaro la clase de tipo creature
 public:
 	GossipMenuEvef() : CreatureScript("GossipMenuEvef") {} /*Creamos un objeto tipo GossipMenuEvef*/
 
-	bool OnGossipEvef(Player* plr, Creature* npc)
+	bool OnGossipHello(Player* plr, Creature* npc)
 	{
 
 		plr->ADD_GOSSIP_ITEM(0, "¿Deseas Enfretarte al gran Cachitos?", GOSSIP_SENDER_MAIN, 1); /*Añadimos las opciones del menú de dialogo*/
 		plr->ADD_GOSSIP_ITEM(0, "!!No quieres enfrentarte al Gran Cachitos!!,Lo Entiendo Tienes miedo igual que Evef", GOSSIP_SENDER_MAIN, 2);
-		plr->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, npc->GetGUID());
+		plr->SEND_GOSSIP_MENU(plr->GetGossipTextId(npc), npc->GetGUID());
 		return true;
 	}
 
