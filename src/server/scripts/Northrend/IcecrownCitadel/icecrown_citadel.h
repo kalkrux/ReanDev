@@ -111,6 +111,7 @@ enum DataTypes
     DATA_HIGHLORD_TIRION_FORDRING   = 37,
     DATA_ARTHAS_PLATFORM            = 38,
     DATA_TERENAS_MENETHIL           = 39,
+    DATA_SINDRAGOSA_WARD            = 40,
 };
 
 enum CreaturesIds
@@ -256,6 +257,7 @@ enum CreaturesIds
     NPC_ICY_BLAST                               = 38223,
     NPC_FROST_BOMB                              = 37186,
     NPC_ICE_TOMB                                = 36980,
+    NPC_SINDRAGOSA_WARD                         = 37503,
 
     // The Lich King
     NPC_THE_LICH_KING                           = 36597,
